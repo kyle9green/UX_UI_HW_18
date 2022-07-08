@@ -91,5 +91,15 @@ body {
   .SmallGreenLine{
     padding: 20px 20px 20px 0px
   }
-  
-  
+.skillsicons{
+  width: 50px;
+}
+.flexContainer{
+  display: flex;
+}
+.flexContainer div{
+  width: 33%;
+}
+.workGrid{
+  display: grid;
+}
