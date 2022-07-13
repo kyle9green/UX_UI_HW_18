@@ -94,6 +94,7 @@ body {
 .skillsicons{
   width: 50px;
 }
+
 .flexContainer{
   display: flex;
   flex-direction: row;
@@ -103,4 +104,109 @@ body {
 }
 .workGrid{
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.item1{
+  grid-column-start: 2;
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-bottom: 20px;
+  
+}
+.item1 img{
+  width: 100%;
+  max-width: 250px;
+  min-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+.item2{
+  grid-column-start: 3;
+  padding: 50px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 20px;
+}
+.item3{
+  grid-column-start: 2;
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-bottom: 20px;
+}
+.item3 img{
+    width: 100%;
+    max-width: 180px;
+    min-width: 100px;
+    height: auto;
+}
+.item4{
+  grid-column-start: 3;
+  padding: 50px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 20px;
+}
+.greendot{
+  grid-column-start: 3;
+  padding: 2px;
+}
+@media only screen and (max-width: 600px) {
+  .flexContainer{
+    flex-direction: column;
+  }
+  .flexContainer div{
+    width: 100%;
+  }
+  .workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .item1{
+    grid-column-start: 1;
+    text-align: center;
+    background-color: black;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+ 
+  .item2{
+    grid-column-start: 2;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .item3{
+    grid-column-start: 1;
+    text-align: center;
+    background-color: black;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .item4{
+    grid-column-start: 2;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .greendot{
+    grid-column-start: 2;
+    padding: 2px;
+  }
 }
